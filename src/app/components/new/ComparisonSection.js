@@ -76,17 +76,19 @@ export default function ComparisonSection() {
   );
 
   return (
-    <section className="comparison-section py-5" ref={sectionRef}>
-      <Container>
-        <div className="text-center mb-5">
-          <p className="text-uppercase text-muted mb-1">COMPARISON</p>
+    <section  style={{ backgroundColor: "#f8f8f8",}} ref={sectionRef}>
+      <Container 
+      className="paddingsection"
+      style={{backgroundColor: "#ffffffff",maxWidth: "1312px",marginTop:"70px", borderRadius: "20px",}}>
+        <div className="text-center mb-2">
+          <p className="text-uppercase text-muted mb-1 pt-5">COMPARISON</p>
           <h2 className="display-4 fw-bold mb-3">Who is the right technology partner<br />for you?</h2>
           <p className="lead text-muted">
             Choosing the right technology partner doesn't only influence your SaaS product - it shapes your entire business. We're here to help you make the right choice.
           </p>
         </div>
 
-        <div className="tabs-container text-center mb-5">
+        <div className="tabs-container text-center " style={{marginBottom:"0", }}>
           <div className="tab-buttons">
             {tabs.map((tab) => (
               <button

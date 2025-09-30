@@ -102,7 +102,7 @@ export default function LogoSliderr() {
 
   return (
     <>
-      <div style={{ paddingTop: "40px", paddingBottom: "50px", backgroundColor : "#dfefff", }}>
+      <div style={{ paddingTop: "40px", paddingBottom: "50px", backgroundColor : "#f8f8f8", }}>
         <div className="slider-container">
           <Slider {...settings}>
             {imageData.map((image) => (

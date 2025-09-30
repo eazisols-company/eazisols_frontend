@@ -70,11 +70,15 @@ export default function FAQSection() {
 
   return (
     <section className=" bg-light">
-      <Container style={{marginTop: "70px",}}>
+      <Container style={{ marginTop: "70px" }}>
         {/* Title Section */}
         <Row className="text-center mb-5">
           <Col>
-            <h2 className="display-5 fw-bold">Frequently Asked Questions</h2>
+            <h2
+              className="faq-heading faq-question fw-bold "
+            >
+              Frequently Asked Questions
+            </h2>
           </Col>
         </Row>
 
@@ -111,7 +115,7 @@ export default function FAQSection() {
             ))}
           </Col>
         </Row>
-        <Row className="mt-5">
+        {/* <Row className="mt-5">
           <Col className="text-center">
             <p
               style={{
@@ -133,7 +137,7 @@ export default function FAQSection() {
               </Link>
             </p>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </section>
   );

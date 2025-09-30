@@ -100,6 +100,7 @@ export default function BarChart() {
     <>
       <section style={{ backgroundColor: "#f8f8f8", }}>
         <Container
+        className="paddingsection"
           style={{
             backgroundColor: "#ffffffff",
             maxWidth: "1312px",
@@ -108,7 +109,7 @@ export default function BarChart() {
           }}
         >
           <div className="text-center mb-5">
-            <p className="text-uppercase text-muted mb-1 pt-4">COMPARISON</p>
+            <p className="text-uppercase text-muted mb-1 pt-5">COMPARISON</p>
             <h2 className="display-6 fw-bold mb-3">
               Who is the right technology partner
               <br />

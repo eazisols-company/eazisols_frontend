@@ -13,15 +13,17 @@ export default function DiscoveryCall() {
         // paddingBottom: "30px",
       }}
     >
-    <Container style={{backgroundColor: "#ffffffff",maxWidth: "1312px", borderRadius: "20px",marginTop: "70px",}}>
-      <div style={{ textAlign: "center", marginBottom: "40px" }}>
+    <Container 
+    className="paddingsection"
+    style={{backgroundColor: "#ffffffff",maxWidth: "1312px", borderRadius: "20px",marginTop: "70px",}}>
+      <div style={{ textAlign: "center",  }}>
         <p
           style={{
             textTransform: "uppercase",
             letterSpacing: "2px",
             fontSize: "0.9rem",
             color: "#777",
-            paddingTop: "25px",
+            paddingTop: "48px",
           }}
         >
           DISCOVERY CALL

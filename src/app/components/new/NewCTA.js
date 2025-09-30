@@ -17,7 +17,7 @@ export default function NewCTA() {
 
   return (
     <section
-      className="d-flex justify-content-center mb-4 mt-5"
+      className="d-flex justify-content-center mb-5 mt-5 new-cta-section"
       style={{
         // background: 'linear-gradient(90deg, #418ED6 50%, #2165B1 100%, #003B8B 100%)',
         background: 'linear-gradient(90deg, #418ED6 50%, #2165B1 100%)',
@@ -28,32 +28,33 @@ export default function NewCTA() {
       }}
     >
       <Container>
-        <Row className="text-center">
+        <Row className="text-center cta-text">
           <Col>
             <h2
+            className="cta-heading"
               style={{
                 fontWeight: 700,
-                fontSize: "2.5rem",
+                fontSize: "2.2rem",
                 marginBottom: "12px",
-                 color: "#ffffffff !important",
+                 color: "#fff !important",
               }}
             >
               Let's Get To Work!
             </h2>
-            <p
+            <p className="cta-heading"
               style={{
-                color: "#ffffffff !important",
+                color: "#fff !important",
                 fontSize: "1.1rem",
                 marginBottom: "30px",
               }}
             >
-              We're ready to get started on your next creative project. <br />
+              We're ready to get started on your next creative project.
               All you need to do is hit the button below.
             </p>
 
             <Button
               variant="dark"
-              className="rounded-pill d-inline-flex align-items-center mt-2 px-4 py-2"
+              className="rounded-pill d-inline-flex align-items-center mt-2 px-4 py-2 cta-button"
               data-cal-link="rida-ayesha-hm81ov/secret"
               data-cal-config='{"layout":"month_view"}'
               style={{

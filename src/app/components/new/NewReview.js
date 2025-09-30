@@ -74,6 +74,7 @@ export default function TestimonialSection() {
   return (
     <section style={{ backgroundColor: "#f8f8f8", }}>
       <Container
+      className="paddingsection"
         style={{
           backgroundColor: "#ffffffff",
           maxWidth: "1312px",
@@ -89,7 +90,7 @@ export default function TestimonialSection() {
                 letterSpacing: "2px",
                 textTransform: "uppercase",
                 color: "#666",
-                paddingTop: "25px",
+                paddingTop: "40px",
               }}
             >
               Reviews

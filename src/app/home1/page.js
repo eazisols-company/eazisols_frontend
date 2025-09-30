@@ -1,14 +1,17 @@
 "use client";
 
 import Image from "next/image";
-import webbg from "@/app/assets/webbg.png";
+import eazilogo from "@/app/assets/eazilogo.png";
 import hh from "@/app/assets/hh.png";
 import image from "@/app/assets/image.png";
+import banner from "@/app/assets/banner.png";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
+import LogoSliderr from "../components/LogoSliderr";
+import "../globals.css";
 
-export default function NewHero() {
+export default function Home1() {
   useEffect(() => {
     (async function () {
       const cal = await getCalApi();
@@ -21,19 +24,14 @@ export default function NewHero() {
 
   return (
     <>
-        <section
-              className="d-flex flex-column bg-light position-relative hero-background"
-              style={{
-                backgroundImage: `url(${webbg.src})`,
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                backgroundRepeat: "no-repeat",
-                minHeight: "520px",
-                overflow: "visible",
-                position: "relative",
-              }}
-            >
-        <Container className="flex-grow-1 d-flex flex-column justify-content-center pt-5 pe-3 pe-md-0 paddingsection">
+      <section
+        className="d-flex flex-column bg-light position-relative hero-background"
+        style={{
+          minHeight: "90vh",
+          overflow: "hidden",
+        }}
+      >
+        <Container className="flex-grow-1 d-flex flex-column justify-content-center pt-5 pe-3 pe-md-0">
           <Row className="align-items-center">
             {/* Left Column - Text */}
             <Col md={7} className="text-md-start text-start ">
@@ -42,10 +40,10 @@ export default function NewHero() {
                   fontWeight: "700",
                   fontSize: "5rem",
                   lineHeight: "1.0",
-                  color: "#ffffffff",
+                  color: "#000000ff",
                 }}
               >
-                <span className=" text-white">Transform Your </span>
+                <span className=" text-black">Transform Your </span>
                 <br />
                 <span style={{ marginLeft: "13px" }}>Idea</span>
                 <span
@@ -67,9 +65,9 @@ export default function NewHero() {
                 style={{
                   fontWeight: "500",
                   fontSize: "1rem",
-                  backgroundColor: "#ffffffff",
+                  backgroundColor: "#000000ff",
                   border: "none",
-                  color :"#418ED6",
+                  color: "#ffffffff",
                   width: "auto",
                   // fontSize: "18px",
                 }}
@@ -96,21 +94,22 @@ export default function NewHero() {
                 }}
               >
                 <Image
-                  src={image}
+                  src={banner}
                   alt="Eazisols Logo"
-                  width={500} 
-                  height={200} 
+                  width={600}
+                  height={400}
                   style={{
-                    height: "auto", 
+                    height: "auto",
                     width: "100%",
-                    maxHeight: "300px", 
-                    objectFit: "contain", 
+                    maxHeight: "300px",
+                    objectFit: "contain",
                   }}
                 />
               </div>
             </Col>
           </Row>
         </Container>
+        <LogoSliderr />
       </section>
     </>
   );

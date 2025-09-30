@@ -16,6 +16,9 @@ export default function NavigationBar() {
   const isHome = pathname === "/";
   const [expanded, setExpanded] = useState(false);
   const [openModal, setOpenModal] = useState(false);
+    const [openContactModal, setOpenContactModal] = useState(false); 
+  const [openCostModal, setOpenCostModal] = useState(false);  
+
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
@@ -68,6 +71,7 @@ export default function NavigationBar() {
 
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto align-items-center gap-2">
+
               <Nav.Link
                 as={Link}
                 href="/"
@@ -76,6 +80,30 @@ export default function NavigationBar() {
               >
                 Home
               </Nav.Link>
+              
+                {/* <NavDropdown
+                title="Home"
+                id="services-dropdown"
+                className="custom-dropdown"
+              >
+                <NavDropdown.Item
+                  as={Link}
+                  href="/home1"
+                  onClick={() => setExpanded(false)}
+                >
+                  Home 1
+                </NavDropdown.Item>
+
+                <NavDropdown.Item
+                  as={Link}
+                  href="/home2"
+                  onClick={() => setExpanded(false)}
+                >
+                  Home 2
+                </NavDropdown.Item>
+              </NavDropdown> */}
+
+
               <Nav.Link
                 as={Link}
                 href="/contact"
@@ -105,14 +133,21 @@ export default function NavigationBar() {
                   Blog
                 </NavDropdown.Item>
               </NavDropdown>
+
               <Nav.Link
                 as={Link}
                 href=""
-                onClick={() => setOpenModal(true)}
-                className={pathname === "/about-us" ? "active-link" : ""}
+                onClick={() => setOpenCostModal(true)}
+                // className={pathname === "/about-us" ? "active-link" : ""}
               >
                 Cost Calculator
               </Nav.Link>
+
+               {/* <div className="d-flex align-items-center ">
+                <Link href="" onClick={() => setOpenModal(true)}>
+                  <Button className="quote-button">Cost Calculator</Button>
+                </Link>
+              </div> */}
 
               <Nav.Link
                 as={Link}
@@ -140,7 +175,7 @@ export default function NavigationBar() {
               </div>
 
               <div className="d-flex align-items-center">
-                <Link href="" onClick={() => setOpenModal(true)}>
+                <Link href="" onClick={() => setOpenContactModal(true)}>
                   <Button
                     className="d-flex align-items-center justify-content-center"
                     style={{
@@ -182,10 +217,15 @@ export default function NavigationBar() {
       {/* Keeps space below fixed navbar */}
       <div className="navbar-spacer" style={{ height: "76px" }}></div>
       <ContactModal
-        open={openModal}
-        onClose={() => setOpenModal(false)}
+        open={openContactModal}
+        onClose={() => setOpenContactModal(false)}
         title="Dynamic Modal Title"
       ></ContactModal>
+      <CostCalculateModal
+        open={openCostModal}
+        onClose={() => setOpenCostModal(false)}
+        title="Dynamic Modal Title"
+      ></CostCalculateModal>
     </>
   );
 }
