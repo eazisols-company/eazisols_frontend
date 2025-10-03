@@ -3,7 +3,6 @@
 import { Container } from "react-bootstrap";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
-import statimg from "@/app/assets/statimg.png";
 import Sheild from "@/app/assets/Sheild.png";
 
 const stats = [
@@ -135,7 +134,7 @@ export default function StatsSection() {
         style={{
           backgroundColor: "#ffffffff",
           maxWidth: "1312px",
-          marginTop: "70px",
+          marginTop: "40px",
           borderRadius: "20px",
         }}
       >

@@ -56,7 +56,7 @@ export default function NavigationBar() {
           >
             <Image
               src={eazilogo}
-              alt="Eazisols Logo"
+              alt="eazisols Logo"
               width={120}
               height={60}
               style={{
@@ -81,7 +81,7 @@ export default function NavigationBar() {
                 Home
               </Nav.Link>
               
-                {/* <NavDropdown
+                <NavDropdown
                 title="Home"
                 id="services-dropdown"
                 className="custom-dropdown"
@@ -101,7 +101,7 @@ export default function NavigationBar() {
                 >
                   Home 2
                 </NavDropdown.Item>
-              </NavDropdown> */}
+              </NavDropdown>
 
 
               <Nav.Link

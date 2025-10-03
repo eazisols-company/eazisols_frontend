@@ -299,7 +299,7 @@ const CostCalculateModal = ({
       >
         <Image
           src={eazistransbg.src}
-          alt="Eazisols Logo"
+          alt="eazisols Logo"
           width={200}
           height={200}
           style={{

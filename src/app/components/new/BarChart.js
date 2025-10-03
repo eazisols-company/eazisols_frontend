@@ -9,7 +9,7 @@ const timeData = [
   { name: "In-House Team", value: "200x" },
 ];
 const scalabilityData = [
-  { name: "Our Team", value: "250,000 Users" },
+  { name: "Our Team", value: "210,000 Users" },
   { name: "No Code Agency", value: "50,000 Users" },
   { name: "Traditional Agency", value: "100,000 Users" },
   { name: "In-House Team", value: "150,000 Users" },
@@ -106,9 +106,10 @@ export default function BarChart() {
             maxWidth: "1312px",
             borderRadius: "20px",
             marginTop: "70px",
+            paddingBottom: "20px",
           }}
         >
-          <div className="text-center mb-5">
+          <div className="text-center mb-4">
             <p className="text-uppercase text-muted mb-1 pt-5">COMPARISON</p>
             <h2 className="display-6 fw-bold mb-3">
               Who is the right technology partner

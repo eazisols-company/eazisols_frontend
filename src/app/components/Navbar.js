@@ -42,7 +42,7 @@ export default function NavigationBar() {
           >
             <Image
               src={eazilogo}
-              alt="Eazisols Logo"
+              alt="eazisols Logo"
               width={120} 
               height={60} 
               style={{

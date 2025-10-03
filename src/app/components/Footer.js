@@ -104,11 +104,11 @@ export default function Footer() {
               </div>
             </Col>
           </Row>
-          <hr className="my-2" />
+          {/* <hr className="my-2" /> */}
           <Row>
             <Col className="text-center">
               <p className="mb-0">
-                Copyright © {new Date().getFullYear()} Eazisols
+                Copyright © {new Date().getFullYear()} eazisols
               </p>
             </Col>
           </Row>

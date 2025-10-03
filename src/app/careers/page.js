@@ -55,7 +55,7 @@ const joinSteps = [
     icon: FaUsers,
     title: "Meet the Team",
     description:
-      `oin us for a conversation where we learn more about you — and you learn about life at Eazisols.`,
+      `oin us for a conversation where we learn more about you — and you learn about life at eazisols.`,
   },
   {
     icon: FaHandshake,
@@ -124,7 +124,7 @@ export default function Careers() {
                   </div>
       <section className="py-5 mt-5">
         <Container className="paddingsection">
-          <h2 className="fw-bold text-center mb-5">How You Join Eazisols</h2>
+          <h2 className="fw-bold text-center mb-5">How You Join eazisols</h2>
           <Row className="g-4">
             {joinSteps.map((step, idx) => (
               <Col key={idx} xs={12} sm={6} lg={3}>
@@ -161,7 +161,7 @@ export default function Careers() {
             className="text-muted mb-5"
             style={{ maxWidth: "700px", margin: "0 auto" }}
           >
-            {`Why You'll Love Working at Eazisols`}
+            {`Why You'll Love Working at eazisols`}
           </p>
         </Col>
         <Row className="g-4 justify-content-center">

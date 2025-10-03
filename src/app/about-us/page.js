@@ -115,7 +115,7 @@ export default function About() {
               className="text-muted "
               style={{ maxWidth: 800, margin: "0 auto" }}
             >
-              Eazisols is a digital software house helping businesses build
+              eazisols is a digital software house helping businesses build
               scalable, efficient, and user-first products. We combine modern
               tech with human creativity to deliver solutions that drive real
               results

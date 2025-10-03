@@ -23,6 +23,7 @@ import Review from "./components/new/Review";
 import ChallengesSection from "./components/new/ChallengesSection";
 import BarChart from "./components/new/BarChart";
 import NewReview from "./components/new/NewReview";
+import Practice from "./components/Practice";
 
 
 
@@ -52,7 +53,8 @@ export default function Home() {
       {/* <Review /> */}
       <NewReview />
       <ChallengesSection />
-      <StatsSection />
+      {/* <StatsSection /> */}
+      <Practice />
       <BarChart />
       {/* <ComparisonSection /> */}
       <DiscoveryCall />

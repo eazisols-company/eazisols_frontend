@@ -1,112 +1,110 @@
 "use client";
 
-import React, { useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import herobghh from "@/app/assets/herobghh.png";
-import { FaPhone, FaEnvelope, FaWhatsapp } from "react-icons/fa";
-import "../globals.css";
-import td from "@/app/assets/td.png";
+import Image from "next/image";
+import eazilogo from "@/app/assets/eazilogo.png";
+import hh from "@/app/assets/hh.png";
+import homeTwo from "@/app/assets/homeTwo.png";
+import banner from "@/app/assets/banner.png";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import { getCalApi } from "@calcom/embed-react";
+import { useEffect } from "react";
 import LogoSliderr from "../components/LogoSliderr";
+import "../globals.css";
 
-const HomeTwo = () => {
+export default function Home1() {
   useEffect(() => {
-    const style = document.createElement("style");
-    style.innerHTML = `
-      @keyframes slideUp {
-        from {
-          opacity: 0;
-          transform: translateY(40px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      .slide-up {
-      opacity: 0;
-      animation: slideUp 1.5s cubic-bezier(0.25, 0.8, 0.25, 1) forwards; 
-      animation-fill-mode: both;
-    }
-      }
-    `;
-    document.head.appendChild(style);
-
-    return () => {
-      document.head.removeChild(style);
-    };
+    (async function () {
+      const cal = await getCalApi();
+      cal("ui", {
+        theme: "dark",
+        styles: { branding: { brandColor: "#000000" } },
+      });
+    })();
   }, []);
+
   return (
     <>
       <section
         className="d-flex flex-column bg-light position-relative hero-background"
-        style={{ minHeight: "90vh", overflow: "hidden" }}
+        style={{
+          minHeight: "90vh",
+          overflow: "hidden",
+        }}
       >
-        <Container className="flex-grow-1 d-flex flex-column justify-content-center heroSection">
-          <Row className="align-items-center justify-content-center gx-4">
-            <Col lg={7} className="slide-up">
-              <div className="pe-lg-5 ps-lg-0">
-                <h1 className="display-3 fw-bold mb-4">
-                  <span className=" slide-up text-black">Transform Your </span>
-                  <br />
-                  <span className="text-black slide-up">Idea</span>
-                  <span
-                    className=" slide-up"
-                    style={{
-                      color: "#418ED6",
-                      textShadow: "2px 2px 4px rgba(0,0,0,0.2)",
-                    }}
-                  >
-                    {" "}
-                    Into Reality
-                  </span>
-                  <p
-                    className="lead text-white slide-up mt-3"
-                    style={{
-                      fontSize: "1.2rem",
-                      fontWeight: "400",
-                      opacity: "0.9",
-                    }}
-                  >
-                    Eazisols helps you design, develop, and scale digital
-                    solutions
-                    <br />
-                    <span className="text-white slide-up">
-                      {" "}
-                      from idea to execution
-                    </span>
-                  </p>
-                </h1>
+        <Container className="flex-grow-1 d-flex flex-column justify-content-center pt-5 pe-3 pe-md-0">
+          <Row className="align-items-center">
+            {/* Left Column - Text */}
+            <Col md={7} className="text-md-start text-start ">
+              <h1
+                style={{
+                  fontWeight: "700",
+                  fontSize: "5rem",
+                  lineHeight: "1.0",
+                  color: "#000000ff",
+                }}
+              >
+                <span className=" text-black">Transform Your </span>
+                <br />
+                <span style={{ marginLeft: "13px" }}>Idea</span>
+                <span
+                  style={{
+                    color: "#418ED6",
+                    textShadow: "2px 2px 4px rgba(0,0,0,0.2)",
+                  }}
+                >
+                  {" "}
+                  Into Reality
+                </span>
+              </h1>
 
-                <div className="contact-info mt-3">
-                  <Row>
-                    <Col md={4}>
-                      <p className="text-white mb-1">
-                        <FaPhone
-                          className="slide-up text-white me-2"
-                          style={{ color: "#418ED6" }}
-                        />
-                        +92 321 8881156
-                      </p>
-                      <p className="text-white mb-1">
-                        <FaEnvelope
-                          className="slide-up text-white me-2"
-                          style={{ color: "#418ED6" }}
-                        />
-                        info@eazisols.com
-                      </p>
-                    </Col>
-                    <Col md={4}>
-                      <p className="text-white mb-1">
-                        <FaWhatsapp
-                          className="slide-up text-white me-2"
-                          style={{ color: "#25D366" }}
-                        />{" "}
-                        +1 (555) 987-6543
-                      </p>
-                    </Col>
-                  </Row>
-                </div>
+              <Button
+                variant="dark"
+                className="rounded-pill d-inline-flex align-items-center mt-4 px-4 py-2"
+                data-cal-link="rida-ayesha-hm81ov/secret"
+                data-cal-config='{"layout":"month_view"}'
+                style={{
+                  fontWeight: "500",
+                  fontSize: "1rem",
+                  backgroundColor: "#000000ff",
+                  border: "none",
+                  color: "#ffffffff",
+                  width: "auto",
+                  // fontSize: "18px",
+                }}
+              >
+                Book an appointment
+                <span style={{ marginLeft: "8px", fontSize: "1.4rem" }}>➔</span>
+              </Button>
+            </Col>
+
+            {/* Right Column - Image */}
+            <Col
+              md={5}
+              className="text-center mt-4 mt-md-0 d-none d-md-flex justify-content-center"
+            >
+              <div
+                style={{
+                  // backgroundColor: "#fff",
+                  borderRadius: "50%",
+                  width: "200px",
+                  height: "200px",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <Image
+                  src={homeTwo}
+                  alt="eazisols Logo"
+                  width={800}
+                  height={700}
+                  style={{
+                    height: "auto",
+                    width: "100%",
+                    maxHeight: "300px",
+                    objectFit: "contain",
+                  }}
+                />
               </div>
             </Col>
           </Row>
@@ -115,6 +113,4 @@ const HomeTwo = () => {
       </section>
     </>
   );
-};
-
-export default HomeTwo;
+}

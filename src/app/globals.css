@@ -1275,7 +1275,7 @@ footer hr {
   position: relative;
   width: 100%;
   padding: 10px 0;
-  border-bottom: 1px solid #e5f3fb;
+  /* border-bottom: 1px solid #e5f3fb; */
 }
 
 .timeline-item:last-child {
@@ -1379,9 +1379,9 @@ footer hr {
     transform: translateX(-50%);
   }
 
-  .timeline-item {
+  /* .timeline-item {
     padding: 40px 0;
-  }
+  } */
 
   .order-md-1 {
     order: 2 !important;
@@ -1517,25 +1517,25 @@ footer hr {
 .challenges-content {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 32px;
+  gap: 13px;
 }
 
 .challenge-card {
   background: white;
-  padding: 32px;
+  padding: 22px;
   border-radius: 16px;
-  border: 1px solid #e2e8f0;
+  border: 1px solid #9c9fa3;
   transition: all 0.2s ease-in-out;
 }
 
 .challenge-card:hover {
-  border-color: #0ea5e9;
+  /* border-color: #0ea5e9; */
   transform: translateY(-4px);
 }
 
 .challenge-icon {
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: block;
 }
 
@@ -1586,12 +1586,14 @@ footer hr {
   }
 }
 .faq-question {
-          font-weight: 600;
-          font-size: 1.1rem;
+          font-weight: 500;
+          /* font-size: 1.1rem; */
           padding: 12px 15px;
           border-radius: 6px;
-          color: #000;
+          color: #161414;
           transition: all 0.3s ease;
+          /* font-family: Inter, sans-serif !important; */
+          line-height: 30px;
         }
         .faq-question:hover {
           color: #418ED6; 
@@ -1617,17 +1619,16 @@ footer hr {
     }
     
  @media (max-width: 576px) {
+    
     .new-cta-section {
-      padding: 40px 0;
-    }
-    .new-cta-section .container {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+    margin-left: 15px !important;  
+    margin-right: 15px !important;  
+  }
     .cta-heading {
       font-size: 1.8rem;
     }
   }
+
   .cta-button {
     display: inline-flex; 
     width: auto !important; 
@@ -1661,4 +1662,100 @@ footer hr {
   font-weight: 700;
   font-size: 2rem;
 }
+.calcom-container:focus,
+.calcom-container:focus-visible {
+  outline: none !important;
+}
+.hero-title{
+  font-family: "Bossa", sans-serif !important;
+  font-weight: 600 !important;  
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
 
+
+/* ===== Base layout (as-is) ===== */
+.stats-wrapper {
+  background: #f7f7f7;
+}
+.stats-wrapper .illus-holder {
+  max-width: 400px;
+}
+
+.stats-wrapper .stat-card {
+  border: 1px solid #5f5b5bff;
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+  position: relative; 
+}
+
+@media (min-width: 768px) {
+  .stats-wrapper .stat-card.tall  { min-height: 340px; }
+  .stats-wrapper .stat-card.short { min-height: 220px; }
+}
+
+.stats-wrapper .stack-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.stats-wrapper .stat-eyebrow { font-size: 14px; letter-spacing: 0.02em; color: #6b7280; }
+.stats-wrapper .stat-number  { font-size: 44px; font-weight: 500; line-height: 1.1; color: #0d1321; }
+.stats-wrapper .stat-subtitle{ font-size: 16px; color: #374151; }
+.stats-wrapper .stat-caption { font-size: 14px; color: #4b5563; }
+
+.stats-wrapper .icon-bottom {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+}
+
+.stats-wrapper .col-lg-6 .row.g-4 > .col-md-6:first-child .stack-col > .stat-card:first-child .card-body,
+.stats-wrapper .col-lg-6 .row.g-4 > .col-md-6:first-child .stack-col > .stat-card:last-child .card-body,
+.stats-wrapper .col-lg-6 .row.g-4 > .col-md-6:last-child  .stack-col > .stat-card:last-child  .card-body {
+   display:flex;
+  flex-direction:column;
+  align-items:center !important;   
+  justify-content:center !important; 
+  text-align:center;
+}
+
+.stats-wrapper .col-lg-6 .row.g-4 > .col-md-6:first-child .stack-col > .stat-card:first-child .icon-bottom,
+.stats-wrapper .col-lg-6 .row.g-4 > .col-md-6:last-child  .stack-col > .stat-card:last-child  .icon-bottom {
+  position: static !important;
+  left: auto !important;
+  bottom: auto !important;
+  transform: none !important;
+  margin-top: 12px; 
+}
+
+.stats-wrapper .col-lg-6 .row.g-4 > .col-md-6:first-child .stack-col > .stat-card:last-child .icon-top {
+  margin-bottom: 12px;
+}
+@media (max-width: 767px) {
+  .stats-wrapper .stat-card {
+    min-height: auto !important; 
+    padding: 1.5rem 1rem;       
+  }
+
+  .stats-wrapper .stat-number {
+    font-size: 32px; 
+  }
+
+  .stats-wrapper .stat-eyebrow {
+    font-size: 12px;
+  }
+
+  .stats-wrapper .stat-subtitle,
+  .stats-wrapper .stat-caption {
+    font-size: 14px;
+  }
+
+  .stats-wrapper .illus-holder {
+    max-width: 280px; 
+    margin-bottom: 1.5rem;
+  }
+}

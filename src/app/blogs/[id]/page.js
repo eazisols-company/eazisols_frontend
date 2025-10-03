@@ -117,7 +117,7 @@ export default function BlogsDetail() {
           alt="SolutionsLoft"
           style={{ width: 28, height: 28, borderRadius: "50%" }}
         /> */}
-              <Typography>Eazisols</Typography>
+              <Typography>eazisols</Typography>
             </Box>
 
             <Box

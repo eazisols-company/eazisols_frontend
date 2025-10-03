@@ -97,7 +97,7 @@ export default function NewHero() {
               >
                 <Image
                   src={image}
-                  alt="Eazisols Logo"
+                  alt="eazisols Logo"
                   width={500} 
                   height={200} 
                   style={{

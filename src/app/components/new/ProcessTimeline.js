@@ -74,15 +74,11 @@ export default function ProcessTimeline() {
       <Container
       className="paddingsection"
         style={{
-          backgroundColor: "#ffffffff",
-          maxWidth: "1312px",
-          marginTop: "70px",
-          borderRadius: "20px",
+          marginTop: "30px",
         }}
       >
         <div className="text-center mb-5">
-          {/* <p className="text-uppercase text-muted mb-1 pt-5">OUR PROCESS</p> */}
-          <h2 className="display-4 fw-bold pt-5" style={{ fontSize: "40px" }}>
+          <h2 className="display-4 fw-bold " style={{ fontSize: "40px" }}>
             90 Days Launch
           </h2>
         </div>

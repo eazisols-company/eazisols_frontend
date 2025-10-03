@@ -70,26 +70,25 @@ export default function FAQSection() {
 
   return (
     <section className=" bg-light">
-      <Container style={{ marginTop: "70px" }}>
+      <Container style={{ marginTop: "20px", maxWidth: "1232px", }}>
         {/* Title Section */}
-        <Row className="text-center mb-5">
+        <Row className="text-center mb-3">
           <Col>
             <h2
-              className="faq-heading faq-question fw-bold "
+              className="faq-heading  fw-bold"
             >
               Frequently Asked Questions
             </h2>
           </Col>
         </Row>
 
-        {/* FAQ List */}
         <Row>
           <Col lg={{ span: 10, offset: 1 }}>
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="mb-3 p-3 bg-white rounded-3 shadow-sm faq-box"
-                style={{ cursor: "pointer" }}
+                className="mb-2  bg-white rounded-3 shadow-sm faq-box"
+                style={{ cursor: "pointer" , padding: '6px 24px 6px' }}
                 onClick={() => toggleFAQ(index)}
               >
                 <div
@@ -98,7 +97,7 @@ export default function FAQSection() {
                   }`}
                 >
                   {faq.question}
-                  <span style={{ fontSize: "1.2rem" }}>
+                  <span style={{ fontSize: "1rem" }}>
                     {activeIndex === index ? "−" : "+"}
                   </span>
                 </div>
@@ -115,29 +114,6 @@ export default function FAQSection() {
             ))}
           </Col>
         </Row>
-        {/* <Row className="mt-5">
-          <Col className="text-center">
-            <p
-              style={{
-                fontSize: "0.9rem",
-                color: "#666",
-                marginBottom: "20px",
-              }}
-            >
-              Still have more questions?{" "}
-              <Link
-                href="/contact"
-                style={{
-                  color: "#418ED6",
-                  textDecoration: "none",
-                  fontWeight: 500,
-                }}
-              >
-                Contact us
-              </Link>
-            </p>
-          </Col>
-        </Row> */}
       </Container>
     </section>
   );

@@ -17,17 +17,18 @@ export default function NewCTA() {
 
   return (
     <section
-      className="d-flex justify-content-center mb-5 mt-5 new-cta-section"
+      className="d-flex justify-content-center mt-5 new-cta-section "
+      
+    >
+      <Container
+      className=" mb-5"
       style={{
-        // background: 'linear-gradient(90deg, #418ED6 50%, #2165B1 100%, #003B8B 100%)',
         background: 'linear-gradient(90deg, #418ED6 50%, #2165B1 100%)',
         padding: "60px 0",
         maxWidth: "600px",
         margin: "0 auto",
         borderRadius: "30px", 
-      }}
-    >
-      <Container>
+      }} >
         <Row className="text-center cta-text">
           <Col>
             <h2
@@ -49,7 +50,7 @@ export default function NewCTA() {
               }}
             >
               We're ready to get started on your next creative project.
-              All you need to do is hit the button below.
+              <span className="d-none d-md-block">All you need to do is hit the button below.</span>
             </p>
 
             <Button

@@ -3,28 +3,32 @@
 import { Container } from "react-bootstrap";
 import Image from "next/image";
 import challange from "@/app/assets/challange.png";
+import talk from "@/app/assets/talk.svg";
+import house from "@/app/assets/house.svg";
+import price from "@/app/assets/price.svg";
+import technical from "@/app/assets/technical.svg";
 
 const challenges = [
   {
-    icon: "😕",
+    icon: technical,
     title: "No technical skills?",
     description:
       "You have no experience developing software and no code tools are too confusing or limited in their functionality",
   },
   {
-    icon: "💰",
+    icon: price,
     title: "High agency prices?",
     description:
       "Sick of big agencies treating you like numbers and trying to get as much money from you as possible",
   },
   {
-    icon: "🏢",
+    icon: house,
     title: "Slow in-house team?",
     description:
       "Hiring developers, designers, product managers, QA engineer stakes months and costs way more than you can afford",
   },
   {
-    icon: "❓",
+    icon: talk,
     title: 'You don\'t talk "tech"?',
     description:
       "You don't understand technical jargon and you are not sure what are best practices, or bad coding practices",
@@ -38,15 +42,15 @@ export default function ChallengesSection() {
       style={{ backgroundColor: "#f8f8f8" }}
     >
       <Container
-      className="paddingsection"
+        className="paddingsection"
         style={{
-          backgroundColor: "#ffffffff",
+          // backgroundColor: "#ffffffff",
           maxWidth: "1312px",
-          borderRadius: "20px",
-          marginTop: "70px",
+          // borderRadius: "20px",
+          marginTop: "50px",
         }}
       >
-        <div className="text-center mb-5">
+        <div className="text-center mb-2">
           <p
             className="text-uppercase text-muted mb-2 pt-5"
             style={{ letterSpacing: "0.05em", fontSize: "0.875rem" }}
@@ -70,7 +74,12 @@ export default function ChallengesSection() {
                   role="img"
                   aria-label={challenge.title}
                 >
-                  {challenge.icon}
+                   <Image
+                    src={challenge.icon}          
+                    alt={challenge.title}  
+                    width={30}
+                    height={30}
+                  />
                 </span>
                 <h3 className="challenge-title">{challenge.title}</h3>
                 <p className="challenge-description">{challenge.description}</p>

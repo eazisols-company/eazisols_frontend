@@ -23,14 +23,14 @@ const reviews = [
     review: "They went above and beyond to deliver my vision into reality.",
     date: "Jun 12, 2023",
     feedback:
-      "Eazisols successfully delivered the MVP, which was deployed in both the App Store and Google Play Store. They precisely addressed the client's needs and delivered items on time. Overall, they went above and beyond to transform the client's vision into reality and even recommended improvements.",
+      "eazisols successfully delivered the MVP, which was deployed in both the App Store and Google Play Store. They precisely addressed the client's needs and delivered items on time. Overall, they went above and beyond to transform the client's vision into reality and even recommended improvements.",
     project: {
       services:
         "Custom Software Development, UI/UX Design, Mobile App Development",
       budget: "$10,000 to $49,999",
       dateRange: "Mar. – June 2023",
       summary:
-        "Eazisols designed and developed an MVP for an AI mobile app within three weeks. The team was also tasked with redesigning the app and improving the backend operations to improve overall performance.",
+        "eazisols designed and developed an MVP for an AI mobile app within three weeks. The team was also tasked with redesigning the app and improving the backend operations to improve overall performance.",
     },
     reviewer: {
       name: "Shawn Winters",
@@ -48,13 +48,13 @@ const reviews = [
       "Outstanding work! They delivered before deadline and with perfect quality.",
     date: "May 5, 2023",
     feedback:
-      "Eazisols successfully delivered the MVP, which was deployed in both the App Store and Google Play Store. They precisely addressed the client's needs and delivered items on time. Overall, they went above and beyond to transform the client's vision into reality and even recommended improvements.",
+      "eazisols successfully delivered the MVP, which was deployed in both the App Store and Google Play Store. They precisely addressed the client's needs and delivered items on time. Overall, they went above and beyond to transform the client's vision into reality and even recommended improvements.",
     project: {
       services: "E-commerce Development, API Integration",
       budget: "$50,000+",
       dateRange: "Jan. – Apr. 2023",
       summary:
-        "Eazisols designed and developed an MVP for an AI mobile app within three weeks. The team was also tasked with redesigning the app and improving the backend operations to improve overall performance.",
+        "eazisols designed and developed an MVP for an AI mobile app within three weeks. The team was also tasked with redesigning the app and improving the backend operations to improve overall performance.",
     },
     reviewer: {
       name: "Emily Johnson",
@@ -155,7 +155,7 @@ export default function TestimonialSection() {
                   style={{ margin: "0 10px" }}
                 >
                   <Card.Header className="bg-dark text-white d-flex justify-content-between align-items-center">
-                    <h5 className="mb-0">Eazisols Reviews</h5>
+                    <h5 className="mb-0">eazisols Reviews</h5>
                     {/* <span style={{ fontSize: "0.9rem" }}>Powered by <strong>Clutch</strong></span> */}
                   </Card.Header>
 

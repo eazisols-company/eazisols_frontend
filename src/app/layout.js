@@ -16,7 +16,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata = {
-  title: 'Eazisols - Transform your idea into a startup',
+  title: 'eazisols - Transform your idea into a startup',
   description: 'Leading global tech services firm, delivering innovative solutions, exceptional results, and fostering lasting client relationships.',
 };
 

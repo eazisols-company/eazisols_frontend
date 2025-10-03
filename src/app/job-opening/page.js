@@ -119,7 +119,7 @@ export default function JobOpenings() {
 
       <section className="py-5 px-3 bg-light">
         <Container maxWidth="lg" sx={{ px: { xs: 2, md: 4 } }}>
-          <h2 className="fw-bold text-center">Find Your Role at Eazisols</h2>
+          <h2 className="fw-bold text-center">Find Your Role at eazisols</h2>
           <p className="text-muted text-center">
             Rewrite your future. Search and apply for a job today
           </p>

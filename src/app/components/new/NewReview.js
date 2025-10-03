@@ -154,7 +154,7 @@ export default function TestimonialSection() {
                   style={{ margin: "0 10px" }}
                 >
                   <Card.Header className="bg-dark text-white d-flex justify-content-between align-items-center">
-                    <h5 className="mb-0">Eazisols Reviews</h5>
+                    <h5 className="mb-0">eazisols Reviews</h5>
                     {/* <span style={{ fontSize: "0.9rem" }}>Powered by <strong>Clutch</strong></span> */}
                   </Card.Header>
 

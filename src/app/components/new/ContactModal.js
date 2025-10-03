@@ -121,7 +121,7 @@ const ContactModal = ({
      PaperProps={{
     sx: {
       width: "500px", 
-      height: "62vh",
+      height: "auto",
       maxWidth: "90vw",
       // maxHeight: "90vh",
       borderRadius: "12px",

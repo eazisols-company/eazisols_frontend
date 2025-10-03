@@ -23,7 +23,7 @@ export default function CultureSection() {
             </Typography>
 
             <Typography variant="body1" color="text.secondary" paragraph>
-            {`Eazisols is a place where innovators come to learn, discover,
+            {`eazisols is a place where innovators come to learn, discover,
               and grow together. We are made up of bold, creative thinkers from
               all walks of life, backgrounds, and experiences. Our strength lies
               in our diversity — of people, perspectives, and ideas. We believe
@@ -31,7 +31,7 @@ export default function CultureSection() {
               deliver exceptional results for our clients. By fostering an
               environment where everyone feels valued and empowered, we create
               space for collaboration, creativity, and continuous learning. At
-              Eazisols, diversity isn't just a value — it's how we grow
+              eazisols, diversity isn't just a value — it's how we grow
               stronger, together.`}
             </Typography>
 

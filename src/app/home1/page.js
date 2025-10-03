@@ -25,7 +25,7 @@ export default function Home1() {
   return (
     <>
       <section
-        className="d-flex flex-column bg-light position-relative hero-background"
+        className="d-flex flex-column bg-light position-relative"
         style={{
           minHeight: "90vh",
           overflow: "hidden",
@@ -36,6 +36,7 @@ export default function Home1() {
             {/* Left Column - Text */}
             <Col md={7} className="text-md-start text-start ">
               <h1
+              className="hero-title"
                 style={{
                   fontWeight: "700",
                   fontSize: "5rem",
@@ -95,7 +96,7 @@ export default function Home1() {
               >
                 <Image
                   src={banner}
-                  alt="Eazisols Logo"
+                  alt="eazisols Logo"
                   width={600}
                   height={400}
                   style={{

@@ -82,7 +82,7 @@ export default function Careers() {
             className="lead text-white mt-2"
             style={{ fontSize: "1.2rem", fontWeight: "400", opacity: "0.9" }}
           >
-            Ideas, innovation, and insights from the Eazisols team.
+            Ideas, innovation, and insights from the eazisols team.
           </p>
         </div>
       </div>
