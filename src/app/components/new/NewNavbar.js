@@ -81,27 +81,7 @@ export default function NavigationBar() {
                 Home
               </Nav.Link>
               
-                <NavDropdown
-                title="Home"
-                id="services-dropdown"
-                className="custom-dropdown"
-              >
-                <NavDropdown.Item
-                  as={Link}
-                  href="/home1"
-                  onClick={() => setExpanded(false)}
-                >
-                  Home 1
-                </NavDropdown.Item>
-
-                <NavDropdown.Item
-                  as={Link}
-                  href="/home2"
-                  onClick={() => setExpanded(false)}
-                >
-                  Home 2
-                </NavDropdown.Item>
-              </NavDropdown>
+               
 
 
               <Nav.Link
