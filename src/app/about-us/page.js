@@ -13,8 +13,6 @@ import {
   HiOutlineAcademicCap,
 } from "react-icons/hi";
 import ReuseContact from "../components/ReuseContact";
-import AboutTd from "../components/AboutTd";
-import CultureSection from "../components/CultureSection";
 const awards = [
   {
     icon: HiOutlineShieldCheck,
@@ -195,8 +193,6 @@ export default function About() {
           </Row>
         </Container>
       </section>
-      <AboutTd />
-      <CultureSection />
       <section>
         <div >
           <ReuseContact />
