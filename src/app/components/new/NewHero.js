@@ -22,13 +22,13 @@ export default function NewHero() {
   return (
     <>
         <section
-              className="d-flex flex-column bg-light position-relative hero-background"
+              className="d-flex flex-column  position-relative hero-background"
               style={{
-                backgroundImage: `url(${webbg.src})`,
+                // backgroundImage: `url(${webbg.src})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
                 backgroundRepeat: "no-repeat",
-                minHeight: "520px",
+                minHeight: "500px",
                 overflow: "visible",
                 position: "relative",
               }}
@@ -42,15 +42,15 @@ export default function NewHero() {
                   fontWeight: "700",
                   fontSize: "5rem",
                   lineHeight: "1.0",
-                  color: "#ffffffff",
+                  color: "#418ED6",
                 }}
               >
-                <span className=" text-white">Transform Your </span>
+                <span className=" ">Transform Your </span>
                 <br />
                 <span style={{ marginLeft: "13px" }}>Idea</span>
                 <span
                   style={{
-                    color: "#418ED6",
+                    color: "#000000",
                     textShadow: "2px 2px 4px rgba(0,0,0,0.2)",
                   }}
                 >
@@ -62,14 +62,14 @@ export default function NewHero() {
               <Button
                 variant="dark"
                 className="rounded-pill d-inline-flex align-items-center mt-4 px-4 py-2"
-                data-cal-link="rida-ayesha-hm81ov/secret"
+                data-cal-link="eazisols/30min"
                 data-cal-config='{"layout":"month_view"}'
                 style={{
                   fontWeight: "500",
                   fontSize: "1rem",
-                  backgroundColor: "#ffffffff",
+                  backgroundColor: "#418ED6",
                   border: "none",
-                  color :"#418ED6",
+                  color :"#ffffff",
                   width: "auto",
                   // fontSize: "18px",
                 }}

@@ -56,7 +56,7 @@ export default function NewCTA() {
             <Button
               variant="dark"
               className="rounded-pill d-inline-flex align-items-center mt-2 px-4 py-2 cta-button"
-              data-cal-link="rida-ayesha-hm81ov/secret"
+              data-cal-link="eazisols/30min"
               data-cal-config='{"layout":"month_view"}'
               style={{
                 fontWeight: "500",

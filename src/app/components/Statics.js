@@ -63,7 +63,7 @@ function AnimatedNumber({ value, duration = 2000, suffix = "" }) {
   );
 }
 
-export default function Practice() {
+export default function Statics() {
   return (
     <>
       <section className="stats-wrapper py-5">

@@ -77,7 +77,6 @@ export default function DiscoveryCall() {
               minHeight: "650px",
               borderRadius: "12px",
               overflow: "hidden",
-              // boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
             }}
           >
             <Cal

@@ -227,10 +227,10 @@ export default function Work() {
         </Container>
       </section>
       <ReuseContact />
-      <CTASection
+      {/* <CTASection
         description1="Let's build something impactful together"
         description2="Quote Generator"
-      />
+      /> */}
     </>
   );
 }

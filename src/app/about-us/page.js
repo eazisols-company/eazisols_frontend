@@ -202,10 +202,10 @@ export default function About() {
           <ReuseContact />
         </div>
       </section>
-      <CTASection
+      {/* <CTASection
         description1="Let's build something impactful together"
         description2="Quote Generator"
-      />
+      /> */}
     </>
   );
 }

@@ -88,18 +88,18 @@ export default function ContactPage() {
               >
                 Reach Us Directly
               </h2>
-              <p className="mb-2">
+              <p className="mb-3">
                 <strong>Office:</strong> Lahore, Pakistan
               </p>
-              <p className="mb-2">
+              <p className="mb-3">
                 <strong>Email:</strong>{" "}
-                <a href="mailto:hello@eazisols.com">info@eazisols.com</a>
+                <a href="mailto:hello@eazisols.com"> info@eazisols.com</a>
               </p>
-              <p className="mb-2">
-                <strong>Phone:</strong>+92 321 8881156
+              <p className="mb-3">
+                <strong>Phone:</strong> +92 321 8881156
               </p>
               <p className="mb-4">
-                <strong>Hours:</strong>Mon-Fri | 10:00 AM - 7:00 PM
+                <strong>Hours:</strong> Mon-Fri | 10:00 AM - 7:00 PM
               </p>
 
               {/* Social Icons */}

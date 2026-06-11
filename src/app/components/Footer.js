@@ -13,7 +13,7 @@ export default function Footer() {
         <Container>
           <Row>
             <Col md={3} className="mb-4">
-              <h5 className="mb-3">Transforming Startups.</h5>
+              <h5 className="mb-3">Building smart digital solutions for growing businesses.</h5>
               <div className="d-flex gap-3 mb-3">
                 <Link href="https://www.facebook.com/eazisols" className="text-white" target="_blank">
                   <i className="bi bi-facebook fs-5"></i>
