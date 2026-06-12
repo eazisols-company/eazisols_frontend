@@ -31,6 +31,7 @@ export default function NewHero() {
                 minHeight: "500px",
                 overflow: "visible",
                 position: "relative",
+                backgroundColor: "#c1dfef",
               }}
             >
         <Container className="flex-grow-1 d-flex flex-column justify-content-center pt-5 pe-3 pe-md-0 paddingsection">
