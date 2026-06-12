@@ -40,7 +40,7 @@ export default function NewCTA() {
                  color: "#fff !important",
               }}
             >
-              Let's Get To Work!
+              Let&apos;s Get To Work!
             </h2>
             <p className="cta-heading"
               style={{
@@ -49,7 +49,7 @@ export default function NewCTA() {
                 marginBottom: "30px",
               }}
             >
-              We're ready to get started on your next creative project.
+              We&apos;re ready to get started on your next creative project.
               <span className="d-none d-md-block">All you need to do is hit the button below.</span>
             </p>
 

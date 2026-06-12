@@ -26,10 +26,7 @@ export default function JobOpenings() {
     getData(
       "/api/careers",
       (data) => {
-        console.log("Raw API response:", data);
-        // const list = Array.isArray(data?.data?.data) ? data.data.data : [];
         const list = Array.isArray(data?.data) ? data.data : [];
-        console.log("🚀 ~ useEffect ~ list:", list);
         setJobs(list);
         setLoading(false);
       },
@@ -38,7 +35,7 @@ export default function JobOpenings() {
         setLoading(false);
       }
     );
-  }, []);
+  }, [getData]);
 
   return (
     <>
@@ -294,8 +291,6 @@ export default function JobOpenings() {
               }
 
               return filtered.map((job, idx) => {
-                console.log("🚀 ~ returnfiltered.map ~ job:", job);
-
                 return (
                   <Link
                     key={idx}

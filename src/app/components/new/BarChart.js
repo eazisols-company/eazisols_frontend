@@ -117,9 +117,9 @@ export default function BarChart() {
               for you?
             </h2>
             <p className="lead text-muted" style={{ fontSize: "16px" }}>
-              Choosing the right technology partner doesn't only influence your
+              Choosing the right technology partner doesn&apos;t only influence your
               SaaS product -<br />
-              it shapes your entire business. We're here to help you make the
+              it shapes your entire business. We&apos;re here to help you make the
               right choice.
             </p>
           </div>

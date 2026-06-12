@@ -52,7 +52,6 @@ export default function MultiStepForm() {
     phone: "",
     file: null,
   });
-  console.log(formData);
   const [errors, setErrors] = useState({
     fullName: "",
     email: "",
@@ -197,7 +196,6 @@ if (step === 1 && formData.industry.length === 0) {
       "/cost-calculator",
       form,
       (data) => {
-        console.log("API Success:", data);
         handleSnackbarOpen("Form submitted successfully!", "success");
         setStep(step + 1);
       },
@@ -206,7 +204,6 @@ if (step === 1 && formData.industry.length === 0) {
         handleSnackbarOpen("Something went wrong", "error");
       }
     );
-    console.log(formData);
   };
 
   // const handleChange = (e) => {

@@ -29,18 +29,14 @@ export default function Careers() {
     getData(
       "/api/blogs",
       (res) => {
-        console.log(" Full API Response:", res);
-        console.log(" Data Array Only:", res?.data);
-
         const list = Array.isArray(res?.data) ? res.data : [];
-        console.log(" extracted blog list:", list);
         setblogs(list);
       },
       (error) => {
         console.error("Failed to fetch blogs", error);
       }
     );
-  });
+  }, [getData]);
 
   return (
     <>

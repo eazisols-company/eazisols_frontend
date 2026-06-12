@@ -96,7 +96,6 @@ export default function JobApply() {
       "/api/apply-for-job",
       form,
       (data) => {
-        console.log("API Success:", data);
         handleSnackbarOpen("Form sent successfully!", "success");
         setFormData({
           career_id: 4,
@@ -117,7 +116,6 @@ export default function JobApply() {
         setLoading(false);
       }
     );
-    console.log(formData);
   };
   const handleClear = () => {
     setFormData({
@@ -204,7 +202,7 @@ useEffect(() => {
       console.error("Failed to load job detail:", err);
     }
   );
-}, [jobId]);
+}, [jobId, getData]);
 
   return (
     <>

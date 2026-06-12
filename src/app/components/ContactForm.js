@@ -52,7 +52,6 @@ export default function ContactForm({
       "/contact-us",
       cleanedFormData,
       (data) => {
-        console.log("API Success:", data);
         handleSnackbarOpen("Form sent successfully!", "success");
       },
       (error) => {

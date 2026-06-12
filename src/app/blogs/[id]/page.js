@@ -25,11 +25,11 @@ export default function BlogsDetail() {
         setLoading(false);
       },
       (err) => {
-        console.log(" ~ useEffect ~ err:", err);
+        console.error("Failed to load blog:", err);
         setLoading(false);
       }
     );
-  }, [blogId]);
+  }, [blogId, getData]);
 
   if (loading)
     return (

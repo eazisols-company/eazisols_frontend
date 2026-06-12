@@ -52,11 +52,11 @@ export default function CaseStudiesDetail() {
         setLoading(false);
       },
       (err) => {
-        console.log(" ~ useEffect ~ err:", err);
+        console.error("Failed to load case study:", err);
         setLoading(false);
       }
     );
-  }, [caseId]);
+  }, [caseId, getData]);
 
   if (loading)
     return (

@@ -99,7 +99,6 @@ const CostCalculateModal = ({
     phone: "",
     file: null,
   });
-  console.log(formData);
   const [errors, setErrors] = useState({
     fullName: "",
     email: "",
@@ -176,7 +175,6 @@ const CostCalculateModal = ({
     setStep(step - 1);
   };
   const handleSubmit = async () => {
-    console.log("submit clicked");
     setLoading(true);
 
     const newErrors = {
@@ -242,7 +240,6 @@ const CostCalculateModal = ({
       "/cost-calculator",
       form,
       (data) => {
-        console.log("API Success:", data);
         handleSnackbarOpen("Form submitted successfully!", "success");
         setStep(step + 1);
         setLoading(false);
@@ -253,7 +250,6 @@ const CostCalculateModal = ({
         setLoading(false);
       }
     );
-    console.log(formData);
   };
 
   const handleChange = (e) => {
@@ -737,8 +733,6 @@ const CostCalculateModal = ({
 
                         setFormData((prev) => ({ ...prev, file }));
                         setErrors((prev) => ({ ...prev, file: "" }));
-
-                        console.log("Selected file:", file.name);
                       }}
                     />
 

@@ -11,7 +11,6 @@ export default function ContactPage() {
   const { postData, getData } = useAPiAuth();
   const { handleSnackbarOpen } = useSnackbar();
   const handleSubmit = async (formData) => {
-    console.log("🚀 ~ handleSubmit ~ formData:", formData)
     const cleanedFormData = {
       ...formData,
       fullName: formData.fullName.replace(/\s{2,}/g, " ").trim(),
@@ -22,7 +21,6 @@ export default function ContactPage() {
       "/contact-us",
       cleanedFormData,
       (data) => {
-        console.log("API Success:", data);
         handleSnackbarOpen("Form sent successfully!", "success");
       },
       (error) => {
@@ -30,7 +28,6 @@ export default function ContactPage() {
         handleSnackbarOpen("Something went wrong.", "error");
       }
     );
-    console.log(cleanedFormData);
   };
   return (
     <>

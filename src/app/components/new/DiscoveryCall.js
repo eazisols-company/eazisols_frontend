@@ -54,7 +54,7 @@ export default function DiscoveryCall() {
               marginBottom: "16px",
             }}
           >
-            Let's work on your MVP together
+            Let&apos;s work on your MVP together
           </h2>
           <p
             style={{

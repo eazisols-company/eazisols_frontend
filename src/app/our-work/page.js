@@ -54,18 +54,14 @@ export default function Work() {
     getData(
       "/api/case-studies",
       (res) => {
-        console.log(" Full API Response:", res);
-        console.log(" Data Array Only:", res?.data);
-
         const list = Array.isArray(res?.data) ? res.data : [];
-        console.log(" extracted case-studies list:", list);
         setcases(list);
       },
       (error) => {
         console.error("Failed to fetch cases", error);
       }
     );
-  }, []);
+  }, [getData]);
   return (
     <>
       <div

@@ -11,8 +11,7 @@ const useAPi = () => {
   ) => {
     try {
       const response = await axios.post(`${baseUrl}/api${endPoint}`,data);
-      success(response.data)
-      console.log("response getListData", response.data);
+      success(response.data);
     } catch (error) {
       console.error("Error fetching list data:", error);
       errorFun(error);
@@ -25,8 +24,7 @@ const useAPi = () => {
   ) => {
     try {
       const response = await axios.get(`${baseUrl}/api${endPoint}`);
-      success(response.data)
-      console.log("response getListData", response.data);
+      success(response.data);
     } catch (error) {
       console.error("Error fetching list data:", error);
       errorFun(error);

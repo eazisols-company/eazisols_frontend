@@ -22,10 +22,11 @@ export default function JobDetail() {
         setLoading(false);
       },
       (err) => {
-        console.log("🚀 ~ useEffect ~ err:", err);
+        console.error("Failed to load job:", err);
+        setLoading(false);
       }
     );
-  }, [id]);
+  }, [id, getData]);
 
   if (loading)
     return (
