@@ -94,7 +94,7 @@ export default function Capabilities() {
               color: "#000",
             }}
           >
-            Capabilities
+            Capabilities 
           </h5>
           <Row>
             <Col md={6}>
